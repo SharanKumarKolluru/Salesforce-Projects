@@ -1,0 +1,175 @@
+JSON Response Format:-
+=======================
+1. Pub Proxy:-
+===============
+Website: http://pubproxy.com/
+End Point URL: http://pubproxy.com/api/proxy
+
+JSON Response: 
+{
+    "data": [
+        {
+            "ipPort": "169.57.1.85:8123",
+            "ip": "169.57.1.85",
+            "port": "8123",
+            "country": "US",
+            "last_checked": "2020-06-19 20:39:59",
+            "proxy_level": "elite",
+            "type": "http",
+            "speed": "9",
+            "support": {
+                "https": 0,
+                "get": 1,
+                "post": 1,
+                "cookies": 1,
+                "referer": null,
+                "user_agent": 1,
+                "google": 0
+            }
+        }
+    ],
+    "count": 1
+}
+
+2. Byte Proxy:-
+================
+Website: https://byteproxies.com/
+End Point URL: https://byteproxies.com/api.php?key=free&amount=100&type=all&anonymity=all
+
+JSON Response: 
+[
+    {
+        "success": true,
+        "response": {
+            "ip": "5.58.58.209",
+            "port": 8080,
+            "type": "http",
+            "anonymity": "transparent",
+            "country": "Ukraine",
+            "country_code": "UA",
+            "load": 3.55212,
+            "checked": "11:09:47 30.05.2020"
+        }
+    },
+    {
+        "success": true,
+        "response": {
+            "ip": "187.162.11.94",
+            "port": 3128,
+            "type": "http",
+            "anonymity": "transparent",
+            "country": "Mexico",
+            "country_code": "MX",
+            "load": 3.30989,
+            "checked": "11:09:13 30.05.2020"
+        }
+    }   
+]
+
+3. Gimme Proxy:-
+=================
+Website:- https://gimmeproxy.com/
+End Point URL: https://gimmeproxy.com/api/getProxy
+
+JSON Response: 
+
+{
+    "supportsHttps": true,
+    "protocol": "socks4",
+    "ip": "159.224.44.19",
+    "port": "49054",
+    "get": true,
+    "post": true,
+    "cookies": true,
+    "referer": true,
+    "user-agent": true,
+    "anonymityLevel": 1,
+    "websites": {
+        "example": true,
+        "google": false,
+        "amazon": true,
+        "yelp": false,
+        "google_maps": true
+    },
+    "country": "UA",
+    "unixTimestampMs": 1592569810231,
+    "tsChecked": 1592569810,
+    "unixTimestamp": 1592569810,
+    "curl": "socks4://159.224.44.19:49054",
+    "ipPort": "159.224.44.19:49054",
+    "type": "socks4",
+    "speed": 144.5,
+    "otherProtocols": {},
+    "verifiedSecondsAgo": 1131
+}
+
+4. Proxy11:-
+=============
+Web Site:- https://proxy11.com/
+End Point URL: https://proxy11.com/api/proxy.json?key=MTI5Ng.XtOqBQ.pdROud0hJbpolTGHRD3ACFtxE3M
+
+JSON Response:
+
+{
+    "data": [
+        {
+            "country": "United States",
+            "country_code": "us",
+            "createdAt": "Fri, 19 Jun 2020 20:02:31 GMT",
+            "google": 0,
+            "ip": "162.159.242.51",
+            "port": "80",
+            "time": 0.09,
+            "type": 0,
+            "updatedAt": "Fri, 19 Jun 2020 20:02:31 GMT"
+        },
+        {
+            "country": "United States",
+            "country_code": "us",
+            "createdAt": "Fri, 19 Jun 2020 20:02:31 GMT",
+            "google": 0,
+            "ip": "162.159.242.59",
+            "port": "80",
+            "time": 0.13,
+            "type": 0,
+            "updatedAt": "Fri, 19 Jun 2020 20:02:31 GMT"
+        }
+	]
+}
+
+5. GetProxy:-
+=============
+Website:- https://getproxylist.com/
+End Point URL: https://api.getproxylist.com/proxy
+
+JSON Response: 
+
+{
+    "_links": {
+        "_self": "/proxy",
+        "_parent": "/"
+    },
+    "ip": "45.183.120.17",
+    "port": 4145,
+    "protocol": "socks4",
+    "anonymity": "high anonymity",
+    "lastTested": "2020-06-19 16:12:04",
+    "allowsRefererHeader": true,
+    "allowsUserAgentHeader": true,
+    "allowsCustomHeaders": true,
+    "allowsCookies": true,
+    "allowsPost": false,
+    "allowsHttps": true,
+    "country": "ZZ",
+    "connectTime": "1.684",
+    "downloadSpeed": "82.000",
+    "secondsToFirstByte": "2.130",
+    "uptime": "23.397"
+}
+
+
+
+
+
+
+
